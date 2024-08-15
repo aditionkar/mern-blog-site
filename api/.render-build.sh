@@ -1,10 +1,18 @@
 #!/usr/bin/env bash
 
-# Remove the node_modules directory to avoid conflicts
+echo "Starting the build script..."
+
+# Remove node_modules directory
+echo "Removing node_modules..."
 rm -rf node_modules
 
-# Install dependencies again
+# Install dependencies
+echo "Installing dependencies..."
 npm install
 
-# Build the project (optional, if you have a build step)
+# Optional build process
+echo "Running build process..."
 npm run build
+
+echo "Build script completed."
+
